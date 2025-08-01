@@ -325,42 +325,6 @@ export default function SollaDesign() {
               )}
             </button>
 
-            {/* Mobile Menu */}
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="md:hidden text-[#000e4a] dark:text-white">
-                  <Menu className="h-5 w-5" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent>
-                <div className="flex flex-col space-y-4 mt-8">
-                  <button
-                    onClick={() => scrollToSection("about")}
-                    className="text-left hover:text-[#c4ff00] transition-colors font-medium"
-                  >
-                    {t.nav.about}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection("skills")}
-                    className="text-left hover:text-[#c4ff00] transition-colors font-medium"
-                  >
-                    {t.nav.skills}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection("portfolio")}
-                    className="text-left hover:text-[#c4ff00] transition-colors font-medium"
-                  >
-                    {t.nav.portfolio}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection("contact")}
-                    className="text-left hover:text-[#c4ff00] transition-colors font-medium"
-                  >
-                    {t.nav.contact}
-                  </button>
-                </div>
-              </SheetContent>
-            </Sheet>
           </div>
         </div>
       </header>
